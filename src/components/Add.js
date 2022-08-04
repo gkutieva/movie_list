@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 const MOVIEURL = process.env.REACT_APP_TMDB_KEY;
 
 export const Add = () => {
+
   const [search, setSearch] = useState('');
   const [results, setResults] = useState([]);
 
@@ -38,6 +39,17 @@ export const Add = () => {
               }}
             />
           </div>
+          
+          {results.length > 0 ? "Length is greater than 0" : "length is 0"}
+          {/* {results.length > 0 && (
+            <ul className='results'>
+              {results.map((movie) => (
+                <li>
+                  {movie.title}
+                </li>
+              ))}
+            </ul>
+          )} */}
         </div>
 
         <div className='results'>
@@ -46,6 +58,7 @@ export const Add = () => {
             : 'No results found'}
         </div>
       </div>
+
     </div>
   );
 };
