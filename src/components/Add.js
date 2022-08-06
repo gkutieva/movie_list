@@ -40,7 +40,7 @@ export const Add = () => {
             />
           </div>
           
-          {results.length > 0 ? "Length is greater than 0" : "length is 0"}
+          {/* {results.length > 0 ? "Length is greater than 0" : "length is 0"}
           {/* {results.length > 0 && (
             <ul className='results'>
               {results.map((movie) => (
@@ -49,12 +49,12 @@ export const Add = () => {
                 </li>
               ))}
             </ul>
-          )} */}
+              )} */}
         </div>
 
         <div className='results'>
           {results.length > 0
-            ? results.map((result) => <p>{result.original_title}</p>)
+            ? results.map((result, idx) => <p key={idx}>{result.original_title}</p>)
             : 'No results found'}
         </div>
       </div>
