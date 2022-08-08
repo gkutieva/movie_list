@@ -11,15 +11,13 @@ export const ResultCard = ({ movie }) => {
   } = useContext(GlobalContext);
 
   let storedMovie = watchlist.find((obj) => obj.id === movie.id);
-  // let storedMovieWatched = watched.find((obj) => obj.id === movie.id);
+  let storedMovieWatched = watched.find((obj) => obj.id === movie.id);
 
-  console.log(watchlist);
-  console.log(storedMovie);
   console.log(watched);
 
   const watchlistDisabled = storedMovie ? true : false;
 
-  // const watchedDisabled = storedMovieWatched ? true : false;
+   const watchedDisabled = storedMovieWatched ? true : false;
 
   return (
     <div className="result-card">
@@ -46,7 +44,7 @@ export const ResultCard = ({ movie }) => {
           <button className="btn"  disabled={watchlistDisabled} onClick={() => addMovieToWatchlist(movie)}>
             Add to Watchlist
           </button>
-          <button className="btn"  onClick={() => addMovieToWatched(movie)}>
+          <button className="btn" disabled={watchedDisabled} onClick={() => addMovieToWatched(movie)}>
             Add to Watched
           </button>
         </div>
