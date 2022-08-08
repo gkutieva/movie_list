@@ -11,18 +11,22 @@ export const ResultCard = ({ movie }) => {
   } = useContext(GlobalContext);
 
   let storedMovie = watchlist.find((obj) => obj.id === movie.id);
-  let storedMovieWatched = watched.find((obj) => obj.id === movie.id);
+  // let storedMovieWatched = watched.find((obj) => obj.id === movie.id);
 
-  const watchlistDisabled = storedMovie ? true : storedMovieWatched ? true : false;
+  console.log(watchlist);
+  console.log(storedMovie);
+  console.log(watched);
 
-  const watchedDisabled = storedMovieWatched ? true : false;
+  const watchlistDisabled = storedMovie ? true : false;
+
+  // const watchedDisabled = storedMovieWatched ? true : false;
 
   return (
     <div className="result-card">
       <div className="poster-wrapper">
         {movie.poster_path ? (
           <img
-            src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
+            src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`}
             alt={`${movie.title} Poster`}
           />
         ) : (
@@ -39,10 +43,10 @@ export const ResultCard = ({ movie }) => {
         </div>
 
         <div className="controls">
-          <button className="btn" disabled={watchlistDisabled} onClick={() => addMovieToWatchlist(movie)}>
+          <button className="btn"  disabled={watchlistDisabled} onClick={() => addMovieToWatchlist(movie)}>
             Add to Watchlist
           </button>
-          <button className="btn" disabled={watchedDisabled} onClick={() => addMovieToWatched(movie)}>
+          <button className="btn"  onClick={() => addMovieToWatched(movie)}>
             Add to Watched
           </button>
         </div>

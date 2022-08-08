@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { ResultCard } from '../components/ResultMovieCard';
 
 const MOVIEURL = process.env.REACT_APP_TMDB_KEY;
 
@@ -54,7 +55,7 @@ export const Add = () => {
 
         <div className='results'>
           {results.length > 0
-            ? results.map((result, idx) => <p key={idx}>{result.original_title}</p>)
+            ? results.map((result) => <ResultCard movie={result}/>)
             : 'No results found'}
         </div>
       </div>
