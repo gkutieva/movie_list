@@ -4,7 +4,7 @@ import { MdOutlineRemoveRedEye } from 'react-icons/md';
 import { GlobalContext } from '../context/GlobalState';
 
 export const MovieControls = ({ movie, type }) => {
-    const { removeMovieFromWatchlist, addMovieToWatched } = useContext(GlobalContext);
+    const { removeMovieFromWatchlist, addMovieToWatched, moveToWatchlist, removeFromWatchlist } = useContext(GlobalContext);
     return (
     <div className='inner-card-controls'>
         {type === 'watchlist' && (
@@ -16,6 +16,16 @@ export const MovieControls = ({ movie, type }) => {
                 < MdOutlineRemoveRedEye />
                 </button>
             </>
+        )}
+        {type === "watched" && (
+            <>
+            <button className='ctrl-btn' onClick={() => moveToWatchlist(movie)}>
+            < MdDisabledVisible />
+            </button>
+            <button className='ctrl-btn' onClick={() => removeFromWatchlist(movie.id)}>
+            < MdOutlineRemoveRedEye />
+            </button>
+        </>
         )}
     </div>
   )
