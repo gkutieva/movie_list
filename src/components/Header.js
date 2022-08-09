@@ -12,7 +12,7 @@ export const Header = () => {
         <div className='container'>
             <div className='inner-container'>
                 <div className='brand'>
-                    <Link to='/'> <FaFilm />Movies</Link>
+                    <Link to='/'> <FaFilm />My Movies</Link>
                 </div>
                 <ul className='nav-links'>
                     <li>

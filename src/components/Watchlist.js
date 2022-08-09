@@ -10,7 +10,7 @@ export const Watchlist = () => {
     <div className='movie-page'>
       <div className='container'>
         <div className='header'>
-          <h1 className='heading'>My Watchlist</h1>
+          <h1 className='heading'></h1>
           <span className='count-pill'>
             {watchlist.length} {watchlist.length === 1 ? "Movie" : "Movies"}
           </span>
@@ -22,7 +22,7 @@ export const Watchlist = () => {
             ))}
           </div>
         ) : (
-          <h2 className='no-movies'>No movies in your list!</h2>
+          <h2 className='no-movies'>No movies in your watched list!</h2>
         )}
       </div>
     </div>

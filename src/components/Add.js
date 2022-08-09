@@ -40,17 +40,6 @@ export const Add = () => {
               }}
             />
           </div>
-          
-          {/* {results.length > 0 ? "Length is greater than 0" : "length is 0"}
-          {/* {results.length > 0 && (
-            <ul className='results'>
-              {results.map((movie) => (
-                <li>
-                  {movie.title}
-                </li>
-              ))}
-            </ul>
-              )} */}
         </div>
 
         <div className='results'>

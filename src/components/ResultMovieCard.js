@@ -13,7 +13,6 @@ export const ResultCard = ({ movie }) => {
   let storedMovie = watchlist.find((obj) => obj.id === movie.id);
   let storedMovieWatched = watched.find((obj) => obj.id === movie.id);
 
-  console.log(watched);
 
   const watchlistDisabled = storedMovie ? true : false;
 
