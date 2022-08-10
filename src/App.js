@@ -6,6 +6,7 @@ import { Watched } from './components/Watched'
 import { Add } from './components/Add';
 import './App.css';
 import {GlobalProvider} from './context/GlobalState'
+import { PopcornImg } from './components/PopcornImg';
 
 
 
@@ -23,7 +24,7 @@ function App() {
           </Route>
         </Routes>
     </Router>
-  
+    <PopcornImg />
     </GlobalProvider>
   );
 }

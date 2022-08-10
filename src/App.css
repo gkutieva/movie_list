@@ -113,10 +113,19 @@ header .nav-links {
 header .nav-links li {
   display: inline-block;
   margin-right: 30px;
+  
 }
 
 header .nav-links li:last-child {
   margin-right: 0;
+}
+
+.flixnet {
+  color: rgb(176, 7, 13);
+}
+
+.span-tag {
+  color: white;
 }
 
 /* Add Page */
@@ -303,6 +312,10 @@ header .nav-links li:last-child {
   text-align: center;
 }
 
-.brand {
-  background-image: url(https://www.vecteezy.com/vector-art/2472819-abstract-home-cinema-background);
+
+.popcorn-emoji {
+  position: fixed;
+  right: 5%;
+  bottom: 0%; 
+  font-size: 200px;
 }
