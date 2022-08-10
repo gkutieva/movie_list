@@ -45,7 +45,7 @@ export const Add = () => {
         <div className='results'>
           {results.length > 0
             ? results.map((result) => <ResultCard movie={result}/>)
-            : 'No results found'}
+            : 'No results found!'}
         </div>
       </div>
 

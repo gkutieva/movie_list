@@ -4,8 +4,8 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   padding: 0;
   margin: 0;
-   background: rgb(195,195,34); 
-  background: radial-gradient(circle, rgba(195,195,34,1) 8%, rgba(61,10,6,1) 100%); 
+  background: rgb(41,39,40);
+  background: radial-gradient(circle, rgba(41,39,40,1) 83%, rgba(198,14,20,1) 100%);
 }
 
 .container {
@@ -41,8 +41,8 @@ body {
 
 .btn {
   padding: 10px 15px;
-  background-color: #e2b2ff;
-  color: #faf2b5; 
+  background-color: rgb(149, 3, 8);
+  color: whitesmoke; 
   border-radius: 10px;
   font-weight: 600;
   border: none;
@@ -52,7 +52,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #a767ff;
+  background-color: rgb(228, 121, 121);
   opacity: 1;
   cursor: pointer;
 }
@@ -68,8 +68,6 @@ input:focus {
 
 /* Header Styles */
 header {
-  background: rgb(194,80,129);
-  background: radial-gradient(circle, rgba(194,80,129,1) 0%, rgba(228,233,148,1) 100%);
   width: auto;
   height: auto;
 }
@@ -83,14 +81,12 @@ header .inner-content {
 }
 
 header a {
-  color: #e2b2ff;
+  color: rgb(249, 240, 240);
   font-size: 1.25rem;
   text-decoration: none;
   transition: all 0.3s ease;
   display: flex;
-  justify-content: left;
-  align-items: center;
-  flex-direction: row;
+  align-items: flex-start;
   
 }
 
@@ -132,11 +128,11 @@ header .nav-links li:last-child {
 
 .add-content .input-wrapper input {
   width: 100%;
-  background-color: #faf2b5;
+  background-color: white;
   padding: 10px;
   border-radius: 5px;
   border: none;
-  color: #e2b2ff;
+  color: black;
   font-size: 1.25rem;
 }
 
@@ -144,6 +140,9 @@ header .nav-links li:last-child {
   padding: 0;
   margin: 0;
   margin-top: 20px;
+  color: white;
+  font-size: large;
+  text-align: center;
 }
 
 .results li {
@@ -153,13 +152,14 @@ header .nav-links li:last-child {
 .result-card {
   display: flex;
   margin-bottom: 20px;
+  text-align: initial;
 }
 
 .result-card .poster-wrapper img,
 .filler-poster {
   width: 75px;
   height: 113px;
-  background-color: #a767ff;
+  background-color: white;
   border-radius: 5px;
   margin-right: 15px;
   display: block;
@@ -174,7 +174,7 @@ header .nav-links li:last-child {
 
 .result-card .info .title {
   font-size: 1.25rem;
-  color: #ded48c;
+  color: white;
   font-weight: 600;
   margin: 0;
 }
@@ -182,7 +182,7 @@ header .nav-links li:last-child {
 .result-card .info .release-date {
   font-size: 1.25rem;
   font-weight: 300;
-  color: #858438;
+  color: white;
   margin: 0;
 }
 
@@ -204,13 +204,20 @@ header .nav-links li:last-child {
 
 .count-pill {
   display: block;
-  background-color: #e2b2ff;
+  background-color: rgb(126, 3, 8);
   padding: 5px 15px;
   font-size: 1.125rem;
   font-weight: 600;
   border-radius: 999px;
-  color: #faf2b5;
+  color: white;
 }
+
+/* .results {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+} */
 
 .movie-page .heading {
   color: black;
@@ -276,7 +283,7 @@ header .nav-links li:last-child {
 }
 
 .ctrl-btn {
-  color: #a767ff;
+  color: rgb(167, 8, 14);
   background-color: transparent;
   border: none;
   transition: all 0.3s ease;
@@ -286,12 +293,12 @@ header .nav-links li:last-child {
 }
 
 .ctrl-btn:hover {
-  color: #e2b2ff;
+  color: white;
   cursor: pointer;
 }
 
 .movie-page .no-movies {
-  color: #e2b2ff;
+  color: white;
   font-size: 3rem;
   text-align: center;
 }
