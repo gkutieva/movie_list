@@ -15,6 +15,14 @@ body {
   margin-left: auto;
 }
 
+/* @media (min-width: 1205px) {
+  .popcorn-emoji {
+    font-size: 50px;
+  }
+} */
+
+
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -317,5 +325,58 @@ header .nav-links li:last-child {
   position: fixed;
   right: 5%;
   bottom: 0%; 
-  font-size: 200px;
+  font-size: 10vw;
+}
+
+
+/*NAVBAR*/
+
+.navBar {
+  position: relative;
+}
+
+.navBar button {
+  position: fixed;
+  right: 40px;
+  top: 40px;
+  z-index: 10;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.menuNav {
+  overflow-y: scroll;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  background: rgb(126, 3, 8);
+  right: 0; 
+  bottom: 0;
+  height: 45vh;
+  width: 0;
+  overflow: hidden;
+  max-width: 190px;
+  z-index: 9;
+}
+
+.menuNav.showMenu {
+  width: 40%;
+}
+
+a {
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menuNav li:first-child {
+  margin-top: 7rem;
+}
+
+.active-link {
+  color: orangered;
+  text-decoration: underline;
 }
