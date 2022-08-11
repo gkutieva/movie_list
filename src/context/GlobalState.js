@@ -15,8 +15,6 @@ export const GlobalProvider = (props) => {
     const [state, dispatch] = useReducer(AppReducer, initialState);
 
     useEffect(() => {
-        // watchlist.length > 0 && { localStorage.setItem('watchlist', JSON.stringify(state.watchlist));}
-        // do same thing for both! 
         localStorage.setItem('watchlist', JSON.stringify(state.watchlist));
         localStorage.setItem('watched', JSON.stringify(state.watched));
     }, [state])

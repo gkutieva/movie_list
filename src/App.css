@@ -78,6 +78,8 @@ input:focus {
 header {
   width: auto;
   height: auto;
+  background: rgb(41,39,40);
+  background: radial-gradient(circle, rgba(41,39,40,1) 83%, rgba(198,14,20,1) 100%);
 }
 
 header .inner-content {

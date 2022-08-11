@@ -15,7 +15,6 @@ function App() {
     <GlobalProvider>
     <Router>
         <Header />
-        
         <Routes>
            <Route path='/' element={<Watchlist />}>
            </Route>
