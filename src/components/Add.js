@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ResultCard } from '../components/ResultMovieCard';
+import { ResultCard } from './ResultMovieCard';
 
 const MOVIEURL = process.env.REACT_APP_TMDB_KEY;
 
