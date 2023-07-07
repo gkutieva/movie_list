@@ -6,8 +6,9 @@
 - Third party API
 
 ## Images: 
+![Screen Shot 2023-07-07 at 11 13 46 AM](https://github.com/gkutieva/movie_list/assets/73370477/8b71299e-2505-43c0-bcd6-2a0249248c42)
 
-
+![Screen Shot 2023-07-07 at 11 14 28 AM](https://github.com/gkutieva/movie_list/assets/73370477/cd3583ab-e567-402d-b62d-c35dfd2b2cb1)
 
 ## Gained Knowledge:
 - Deeper knowledge of Bootstrap
