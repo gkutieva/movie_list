@@ -44,7 +44,7 @@ export const Add = () => {
 
         <div className='results'>
           {results.length > 0
-            ? results.map((result) => <ResultCard movie={result}/>)
+            ? results.map((result, idx) => <ResultCard key={idx} movie={result}/>)
             : 'No results found!'}
         </div>
       </div>
