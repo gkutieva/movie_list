@@ -7,8 +7,6 @@ import { Add } from './components/Add';
 import './App.css';
 import {GlobalProvider} from './context/GlobalState'
 import { PopcornImg } from './components/PopcornImg';
-import { NavBar } from './components/NavBar';
-
 
 function App() {
   return (
