@@ -3,15 +3,13 @@
 import React, { createContext, useEffect, useReducer } from "react";
 import   AppReducer   from './AppReducer';
 
-//initial state
-const initialState = {
-    watchlist: localStorage.getItem('watchlist') ? JSON.parse(localStorage.getItem('watchlist')) : [],
-    watched: localStorage.getItem('watched') ? JSON.parse(localStorage.getItem('watched')) : [],
-};
-
-export const GlobalContext = createContext(initialState);
+export const GlobalContext = createContext();
 
 export const GlobalProvider = (props) => {
+    const initialState = {
+        watchlist: localStorage.getItem('watchlist') ? JSON.parse(localStorage.getItem('watchlist')) : [],
+        watched: localStorage.getItem('watched') ? JSON.parse(localStorage.getItem('watched')) : [],
+    };
     const [state, dispatch] = useReducer(AppReducer, initialState);
 
     useEffect(() => {

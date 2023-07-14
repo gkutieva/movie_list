@@ -53,9 +53,7 @@ export const NavBar = () => {
             <li key={link.id}>
               <NavLink 
                 to={link.path} 
-                activeClassName="active-link"
                 onClick={() => closeMenu()}
-                exact
               >
                 {link.text}
               </NavLink>
