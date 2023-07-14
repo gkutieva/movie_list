@@ -25,4 +25,4 @@
 - JF 3.6 - Can implement a RESTful API.
 
 ## Getting started:
-Click [here](https://chimerical-profiterole-2bbea0.netlify.app/) to browse the portfolio app!
+Click [here](https://courageous-naiad-bad7ad.netlify.app/) to browse the Flixnet app!
