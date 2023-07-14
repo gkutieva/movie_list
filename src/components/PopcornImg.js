@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 export const PopcornImg = () => {
   return (
-    <div className='popcorn-emoji'>🍿</div>
-  )
-}
+    <span className='popcorn-emoji' role='img' aria-label='popcorn'>
+      🍿
+    </span>
+  );
+};
